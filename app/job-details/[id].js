@@ -18,7 +18,7 @@ const JobDetails = () => {
     const {data, isLoading, error, refetch} = useFetch(
         'job-details',
         {
-            job_id: params.id
+            job_id: params
         }
     )
 
@@ -108,5 +108,4 @@ const JobDetails = () => {
         </SafeAreaView>
     )
 }
-
 export default JobDetails;

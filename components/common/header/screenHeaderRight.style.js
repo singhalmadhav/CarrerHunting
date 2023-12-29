@@ -6,11 +6,10 @@ const styles = StyleSheet.create({
   btnContainer: {
     width: 40,
     height: 40,
-    backgroundColor: COLORS.white,
-    borderRadius: SIZES.small / 1.25,
+    marginHorizontal: 5,
     marginVertical: -2,
-    justifyContent: "center",
-    alignItems: "center",
+    borderRadius: SIZES.small / 1.25,
+    justifyContent: "space-evenly",
   },
   btnImg: (dimension) => ({
     width: dimension,

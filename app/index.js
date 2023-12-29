@@ -4,7 +4,7 @@ import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from '../constants'
 import { 
-  Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome 
+  Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome, ScreenHeaderRightBtn
 } from '../components'
 
 
@@ -18,13 +18,16 @@ const Home = () => {
     <SafeAreaView style = {{flex:1, backgroundColor:COLORS.lightWhite}}>
       <Stack.Screen
         options={{
-          headerStyle: {backgroundColor: COLORS.white},
+          headerStyle: {backgroundColor: COLORS.gray},
           headerShadowVisible: false,
           headerLeft: () => (
             <ScreenHeaderBtn iconUrl = {icons.menu} dimensions = "60%"/>
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl = {images.profile} dimensions = "100%"/>
+            <View style={{flexDirection:"row", justifyContent: 'space-evenly'}}>
+              <ScreenHeaderRightBtn iconUrl= {icons.heartOutline} dimensions="100%"/>
+              <ScreenHeaderRightBtn iconUrl = {images.profile} dimensions = "100%"/>
+            </View>
           ),
           headerTitle: ""
         }}

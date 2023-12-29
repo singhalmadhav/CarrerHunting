@@ -1,4 +1,5 @@
 import ScreenHeaderBtn from "./common/header/ScreenHeaderBtn";
+import ScreenHeaderRightBtn from "./common/header/ScreenHeaderRightBtn";
 
 // home screen
 import Welcome from "./home/welcome/Welcome";
@@ -16,6 +17,7 @@ import Specifics from "./jobdetails/specifics/Specifics";
 import NearbyJobCard from "./common/cards/nearby/NearbyJobCard";
 
 export {
+  ScreenHeaderRightBtn,
   ScreenHeaderBtn,
   Welcome,
   Nearbyjobs,
